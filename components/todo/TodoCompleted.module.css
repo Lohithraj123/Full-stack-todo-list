@@ -1,0 +1,22 @@
+.items {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.mappedItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.mappedItems p {
+  margin: 0;
+  flex-grow: 1;
+}

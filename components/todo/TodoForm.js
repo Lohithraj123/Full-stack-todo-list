@@ -1,8 +1,11 @@
 import React, { useRef } from 'react';
+import classes from './TodoForm.module.css';
 import Card from '../ui/Card';
+import { useRouter } from 'next/router';
 
 const TodoFormList = (props) => {
   const todoInputRef = useRef();
+  const router = useRouter();
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -17,9 +20,8 @@ const TodoFormList = (props) => {
 
   return (
     <Card>
-      <form onSubmit={submitHandler}>
-        <div>
-          <label htmlFor="todo">Todo's</label>
+      <form onSubmit={submitHandler} className={classes.form} method="POST">
+        <div className={classes.todo}>
           <input
             placeholder="Enter the Todo"
             type="text"
@@ -29,14 +31,9 @@ const TodoFormList = (props) => {
           />
         </div>
         <div>
-          <button>Add Todo</button>
+          <button className={classes.btn}>Add Todo</button>
         </div>
       </form>
-      <ul>
-        {props.todos.map((todo, index) => (
-          <li key={index}>{todo.todo}</li>
-        ))}
-      </ul>
     </Card>
   );
 };

@@ -15,7 +15,7 @@ function MainNavigation() {
             <Link href="/todo-form">Add New Todo's</Link>
           </li>
           <li>
-            <Link href="/todo-completed">Completed Todo's</Link>
+            <Link href="/todoId">Completed Todo's</Link>
           </li>
         </ul>
       </nav>

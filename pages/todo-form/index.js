@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TodoFormList from '@/components/todo/TodoForm';
 
 const TodoForm = () => {
-  const [todos, setTodos] = useState([]);
+  const [title, setTodos] = useState([]);
 
   const addTodoHandler = async (enteredtodoList) => {
     try {
@@ -27,7 +27,7 @@ const TodoForm = () => {
 
   return (
     <div>
-      <TodoFormList addTodo={addTodoHandler} todos={todos} />
+      <TodoFormList addTodo={addTodoHandler} todos={title} />
     </div>
   );
 };

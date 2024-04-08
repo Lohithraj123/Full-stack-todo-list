@@ -14,7 +14,7 @@ const TodoEdit = (props) => {
           <input
             type="text"
             required
-            id="todo"
+            id="title"
             ref={todoInputRef}
           />
         </div>

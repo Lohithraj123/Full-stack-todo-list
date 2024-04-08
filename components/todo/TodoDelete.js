@@ -5,9 +5,8 @@ import { MdDelete } from 'react-icons/md';
 const TodoDelete = () => {
   return (
     <div>
-      <Link href="">
         <MdDelete />
-      </Link>
+
     </div>
   );
 };

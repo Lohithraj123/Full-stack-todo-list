@@ -26,7 +26,7 @@ const TodoFormList = (props) => {
             placeholder="Enter the Todo"
             type="text"
             required
-            id="todo"
+            id="title"
             ref={todoInputRef}
           />
         </div>
